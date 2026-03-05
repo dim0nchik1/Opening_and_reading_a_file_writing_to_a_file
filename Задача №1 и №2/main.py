@@ -1,7 +1,7 @@
 from pprint import pprint
 
 cook_book = {}
-with open('../Opening_and_reading_a_file_writing_to_a_file/Задача №1 и №2/recipes.txt', encoding='utf-8') as f:
+with open('recipes.txt', encoding='utf-8') as f:
     line = ','.join(f.readlines()).replace('|', '').replace('\n', '').split(',,')
     for i in range(len(line)):
         cook_book[line[i].split(',')[0]] = []
